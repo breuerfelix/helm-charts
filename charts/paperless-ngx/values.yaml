@@ -30,6 +30,7 @@ paperless:
     - name: PAPERLESS_OCR_LANGUAGE
       value: ger
 
+  # create the secret manually first
   secretRefs:
     - key: PAPERLESS_SECRET_KEY
       name: paperless-ngx
@@ -37,7 +38,7 @@ paperless:
       name: paperless-ngx
 
   ingress:
-    enabled: true
+    enabled: false
     host: paperless.example.com
     annotations:
       cert-manager.io/cluster-issuer: lets-encrypt
