@@ -1,0 +1,59 @@
+paperless:
+  name: paperless-ngx
+
+  image:
+    name: ghcr.io/paperless-ngx/paperless-ngx
+    tag: latest
+
+  deployment:
+    port: 8000
+
+  volumes:
+    # sqlite database
+    - name: data
+      path: /usr/src/paperless/data
+      size: 5Gi
+    # file store
+    - name: media
+      path: /usr/src/paperless/media
+      size: 15Gi
+    # used for backups
+    - name: export
+      path: /usr/src/paperless/export
+      size: 20Gi
+
+  env:
+    - name: PAPERLESS_REDIS
+      value: redis://redis
+    - name: PAPERLESS_TIME_ZONE
+      value: Europe/Berlin
+    - name: PAPERLESS_OCR_LANGUAGE
+      value: ger
+
+  secretRefs:
+    - key: PAPERLESS_SECRET_KEY
+      name: paperless-ngx
+    - key: PAPERLESS_URL
+      name: paperless-ngx
+
+  ingress:
+    enabled: true
+    host: paperless.example.com
+    annotations:
+      cert-manager.io/cluster-issuer: lets-encrypt
+
+redis:
+  name: redis
+
+  image:
+    name: redis
+    tag: 7
+
+  deployment:
+    port: 6379
+
+  volumes:
+    # sqlite database
+    - name: data
+      path: /data
+      size: 5Gi
