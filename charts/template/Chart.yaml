@@ -1,5 +1,0 @@
-apiVersion: v2
-name: template
-description: Template Helm Chart used for many other Charts.
-version: 0.0.2
-appVersion: v0.0.1
