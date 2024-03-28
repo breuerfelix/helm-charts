@@ -24,11 +24,11 @@ paperless:
 
   env:
     - name: PAPERLESS_REDIS
-      value: redis://redis
+      value: redis://redis:80
     - name: PAPERLESS_TIME_ZONE
       value: Europe/Berlin
     - name: PAPERLESS_OCR_LANGUAGE
-      value: ger
+      value: eng
 
   # create the secret manually first
   secretRefs:
