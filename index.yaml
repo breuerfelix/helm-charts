@@ -3,6 +3,19 @@ entries:
   lychee:
   - apiVersion: v2
     appVersion: v4.11.1
+    created: "2024-03-28T19:54:34.562939444Z"
+    dependencies:
+    - name: template
+      repository: https://breuerfelix.github.io/helm-charts
+      version: 0.0.3
+    description: A great looking and easy-to-use photo-management-system.
+    digest: 9d2fb5f84c0040a828570c04a96a2d6a57b4b97f9154118c7a0b812fc9b27f9c
+    name: lychee
+    urls:
+    - https://github.com/breuerfelix/helm-charts/releases/download/lychee-0.0.2/lychee-0.0.2.tgz
+    version: 0.0.2
+  - apiVersion: v2
+    appVersion: v4.11.1
     created: "2024-03-28T19:07:08.644588655Z"
     dependencies:
     - name: template
@@ -14,7 +27,37 @@ entries:
     urls:
     - https://github.com/breuerfelix/helm-charts/releases/download/lychee-0.0.1/lychee-0.0.1.tgz
     version: 0.0.1
+  paperless-ngx:
+  - apiVersion: v2
+    appVersion: v2.6.3
+    created: "2024-03-28T19:54:34.741063718Z"
+    dependencies:
+    - alias: paperless
+      name: template
+      repository: https://breuerfelix.github.io/helm-charts
+      version: 0.0.3
+    - alias: redis
+      name: template
+      repository: https://breuerfelix.github.io/helm-charts
+      version: 0.0.3
+    description: Paperless-ngx is a document management system that transforms your
+      physical documents into a searchable online archive so you can keep, well, less
+      paper.
+    digest: 0cf1b98417f514f532328bff2c77a53b7c28685fb86c9a371112bbbc1b0b60b1
+    name: paperless-ngx
+    urls:
+    - https://github.com/breuerfelix/helm-charts/releases/download/paperless-ngx-0.0.2/paperless-ngx-0.0.2.tgz
+    version: 0.0.2
   template:
+  - apiVersion: v2
+    appVersion: v0.0.1
+    created: "2024-03-28T19:54:34.906828731Z"
+    description: Template Helm Chart used for many other Charts.
+    digest: d0bf7ec4710b2925a324e38a819e6f9dd3a170024766649649966a3349b21e62
+    name: template
+    urls:
+    - https://github.com/breuerfelix/helm-charts/releases/download/template-0.0.4/template-0.0.4.tgz
+    version: 0.0.4
   - apiVersion: v2
     appVersion: v0.0.1
     created: "2024-03-28T18:54:10.800297814Z"
@@ -24,4 +67,4 @@ entries:
     urls:
     - https://github.com/breuerfelix/helm-charts/releases/download/template-0.0.3/template-0.0.3.tgz
     version: 0.0.3
-generated: "2024-03-28T19:07:08.644592772Z"
+generated: "2024-03-28T19:54:34.906844029Z"
