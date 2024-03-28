@@ -6,9 +6,9 @@ appVersion: v2.6.3
 dependencies:
 - name: template
   alias: paperless
-  version: 0.0.4
+  version: 0.0.3
   repository: https://breuerfelix.github.io/helm-charts
 - name: template
   alias: redis
-  version: 0.0.4
+  version: 0.0.3
   repository: https://breuerfelix.github.io/helm-charts
