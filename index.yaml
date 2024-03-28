@@ -1,5 +1,19 @@
 apiVersion: v1
 entries:
+  lychee:
+  - apiVersion: v2
+    appVersion: v4.11.1
+    created: "2024-03-28T19:07:08.644588655Z"
+    dependencies:
+    - name: template
+      repository: https://breuerfelix.github.io/helm-charts
+      version: 0.0.3
+    description: A great looking and easy-to-use photo-management-system.
+    digest: 2646801052621cfe0e7f2573a96f6949effdd244caa2bdde685b35fe79d22172
+    name: lychee
+    urls:
+    - https://github.com/breuerfelix/helm-charts/releases/download/lychee-0.0.1/lychee-0.0.1.tgz
+    version: 0.0.1
   template:
   - apiVersion: v2
     appVersion: v0.0.1
@@ -10,4 +24,4 @@ entries:
     urls:
     - https://github.com/breuerfelix/helm-charts/releases/download/template-0.0.3/template-0.0.3.tgz
     version: 0.0.3
-generated: "2024-03-28T18:54:10.800325656Z"
+generated: "2024-03-28T19:07:08.644592772Z"
