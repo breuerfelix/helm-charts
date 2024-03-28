@@ -1,0 +1,13 @@
+apiVersion: v1
+entries:
+  template:
+  - apiVersion: v2
+    appVersion: v0.0.1
+    created: "2024-03-28T18:54:10.800297814Z"
+    description: Template Helm Chart used for many other Charts.
+    digest: 6b959713a10438abe5c5b098ab6dfa91a526a8a7728f676e82567d7569360680
+    name: template
+    urls:
+    - https://github.com/breuerfelix/helm-charts/releases/download/template-0.0.3/template-0.0.3.tgz
+    version: 0.0.3
+generated: "2024-03-28T18:54:10.800325656Z"
