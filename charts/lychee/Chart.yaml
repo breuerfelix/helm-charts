@@ -1,0 +1,9 @@
+apiVersion: v2
+name: lychee
+description: A great looking and easy-to-use photo-management-system.
+version: 0.0.1
+appVersion: v4.11.1
+dependencies:
+- name: template
+  version: 0.0.3
+  repository: https://breuerfelix.github.io/helm-charts

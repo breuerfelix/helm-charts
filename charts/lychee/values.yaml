@@ -1,0 +1,28 @@
+template:
+  name: lychee
+
+  image:
+    name: lycheeorg/lychee
+    tag: 5.1.2
+  
+  volumes:
+    - name: uploads
+      path: /uploads
+      size: 50Gi
+    - name: conf
+      size: 1Gi
+      path: /conf
+
+  env:
+    - name: APP_NAME
+      value: lychee
+    - name: APP_URL
+      value: https://lychee.example.com
+    - name: PHP_TZ
+      value: Europe/Berlin
+    - name: DB_CONNECTION
+      value: sqlite
+    - name: ADMIN_USER
+      value: admin
+    - name: ADMIN_PASSWORD
+      value: admin
