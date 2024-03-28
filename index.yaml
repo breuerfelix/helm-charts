@@ -30,6 +30,26 @@ entries:
   paperless-ngx:
   - apiVersion: v2
     appVersion: v2.6.3
+    created: "2024-03-28T20:08:49.545697831Z"
+    dependencies:
+    - alias: paperless
+      name: template
+      repository: https://breuerfelix.github.io/helm-charts
+      version: 0.0.4
+    - alias: redis
+      name: template
+      repository: https://breuerfelix.github.io/helm-charts
+      version: 0.0.4
+    description: Paperless-ngx is a document management system that transforms your
+      physical documents into a searchable online archive so you can keep, well, less
+      paper.
+    digest: 013cebf55016774ac7aa200a4c5f11c0b9858075cecc25674f18b7b0f88dac62
+    name: paperless-ngx
+    urls:
+    - https://github.com/breuerfelix/helm-charts/releases/download/paperless-ngx-0.0.3/paperless-ngx-0.0.3.tgz
+    version: 0.0.3
+  - apiVersion: v2
+    appVersion: v2.6.3
     created: "2024-03-28T19:54:34.741063718Z"
     dependencies:
     - alias: paperless
@@ -67,4 +87,4 @@ entries:
     urls:
     - https://github.com/breuerfelix/helm-charts/releases/download/template-0.0.3/template-0.0.3.tgz
     version: 0.0.3
-generated: "2024-03-28T19:54:34.906844029Z"
+generated: "2024-03-28T20:08:49.54571332Z"
