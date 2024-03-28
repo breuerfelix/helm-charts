@@ -1,0 +1,14 @@
+name: template
+image:
+  name: busybox
+
+ingress:
+  enabled: false
+
+deployment:
+  annotations: {}
+
+volumes:
+  - name: data
+    path: /data
+    size: 1Gi
